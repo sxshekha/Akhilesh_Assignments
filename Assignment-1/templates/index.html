@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Flask App</title>
+</head>
+<body>
+    <h1>This is my first application!</h1>
+    
+    <hr>
+    
+    <h2>👤 Shivam Shekhar</h2>
+    <p>My name is: <strong>{{ name }}</strong></p>
+    
+    <hr>
+    
+    <h2>⏰ Current Date and Time</h2>
+    <p>The current server time is: <strong>{{ current_time }}</strong></p>
+    
+    <hr>
+    
+    <h2>🎬 Favorite Movies</h2>
+    <ul>
+        {% for movie in movies %}
+        <li>{{ movie }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
